@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h3>Create a function that receives an array of numbers and returns an array containing only the positive numbers. ( Take min 10 elements consisting of at          least four negative numbers)
+        </h3>
+
+        <script>
+            function getPositiveNumbers(arr) {
+                return arr.filter(number => number > 0);
+            }
+
+            const numbers = [5, -10, 15, -20, 25, -30, 35, -40, 45, -50 ];
+
+            const positiveNumbers = getPositiveNumbers(numbers);
+            console.log(positiveNumbers)
+        </script>
+    </body>
+</html>

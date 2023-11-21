@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <object>
+        <h2>Add Methods to  an Objects</h2>
+        <p id="demo"></p>
+
+        <script>
+            const person ={
+                firstName: "John",
+                lastName: "Doe",
+                id:5566,
+
+            };
+            person.name = function(){
+                return this.firstName + " " + this.lastName;
+
+            };
+            document.getElementById("demo").innerHTML = "My Friend is " + person.name();
+        </script>
+    </object>
+</html>

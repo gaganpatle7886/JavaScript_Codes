@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Using Built-in Methods</h2>
+        <p id="demo"></p>
+
+        <script>
+            const person = {
+                firstName:"Raj",
+                lastName:"Sagre",
+                id: 5566,
+
+            };
+            person.name = function () {
+                return (this.firstName + " " +
+                this.lastName).toUpperCase();
+            };
+
+            document.getElementById("demo").innerHTML = "My friend is " + person.name();
+        </script>
+    </body>
+</html>

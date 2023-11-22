@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Calculate the sum of digits of a positive integer number. (The number should contain at least 4 digits. For example if the number is 4673, the output should be 20 i.e. addition of the digits.)
+        </h2>
+        <script>
+            function sumOfDigits(number) {
+                const numString = number.toString ();
+                let sum = 0;
+                for (let i = 0; i < numString.length; i++){
+                    sum += parseInt(numString[i]);
+                }
+                return sum;
+            }
+
+            const number = 4673;
+            const result = sumOfDigits(number);
+            console.log(`The sum of digits of ${number} is ${result}.`)
+        </script>
+    </body>
+</html>

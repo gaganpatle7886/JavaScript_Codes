@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>JS Setter</h2>
+        <script>
+            const person = {
+                firstName : "Raju",
+                lastName : "Mishra",
+                language : "",
+                set lang (lang) {
+                    this.language = lang;
+                }
+            };
+
+            person.lang = "English";
+
+            console.log(person.language);
+        </script>
+    </body>
+</html>

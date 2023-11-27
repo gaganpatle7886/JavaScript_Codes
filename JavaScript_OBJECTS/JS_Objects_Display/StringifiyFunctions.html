@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>JSON.stringify will not stringify function:</h2>
+
+        <script>
+            const person  = {
+                name : "John",
+                age : function () {return 30;}
+            };
+
+            console.log(JSON.stringify(person));
+        </script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>
+            JS Getter (The get keyword)
+        </h2>
+        <script>
+            const person = {
+                fristName : "Jhon",
+                lastName : "Pande",
+                language : "en",
+                get lang() {
+                    return this.language;
+                }
+            };
+
+            console.log(person.lang);
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>JS Object Constructors</h2>
+        <script>
+            function person (first, last, age, eye) {
+                this.firstName = first;
+                this.lastName = last;
+                this.age = age;
+                this.eyecolor = eye;
+            }
+            const myfriend = new person("Golu", "Doe", 40, "blue" );
+
+            console.log("My friend is "  + myfriend.age + ".");
+        </script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>
+            Add New Property to an object
+        </h2>
+        <script>
+            function person (first, last, age, eye){
+                this.firstName = first;
+                this.lastName = last;
+                this.age = age;
+                this.eyeColor = eye;
+
+            }
+            const myBrother = new person ("Ramu", "Kapur", "30", "black");
+
+            const mySister = new person ("Shalu", "Kapur", "25", "blue");
+
+            myBrother.nationality = "English";
+            
+            console.log("my Brother is " +  myBrother.nationality);
+        </script>
+    </body>
+</html>

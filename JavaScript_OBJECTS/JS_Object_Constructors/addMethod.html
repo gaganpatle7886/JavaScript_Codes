@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Adding a Method to an Object</h2>
+        <script>
+            function Person(first, last, age, eye) {
+              this.firstName = first;
+              this.lastName = last;
+              this.age = age;
+              this.eyeColor = eye;
+            }
+
+            const myBrother = new Person("Jhon", "Doe", 40,"blue");
+
+            const mySister = new Person("Sally", "Rally", 34, "black")
+
+            mySister.name = function() {
+                return this.firstName + " " + this.lastName;
+            };
+
+            console.log("My Sister is " + mySister.name());
+        </script>
+    </body>
+</html>

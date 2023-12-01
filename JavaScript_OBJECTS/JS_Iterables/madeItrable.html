@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Home made Itrabke</h2>
+        <p id="demo"></p>
+        <script>
+            function myNumbers() {
+                let n  = 0 ;
+                return {
+                    next: function() {
+                        n += 10;
+                        return {value:n, done:false};
+                    }
+                };
+            }
+
+            const n = myNumbers();
+            n.next();
+            n.next();
+            n.next();
+
+            document.getElementById("demo").innerHTML = n.next().value;
+        </script>
+    </body>
+</html>

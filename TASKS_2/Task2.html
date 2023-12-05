@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <title>Change Text On Button Click </title>
+    <style>
+    body {
+        justify-content: center;
+        text-align: center;
+        background-color: aquamarine;
+    }
+
+    button {
+        padding: 15px 15px;
+        font-size: 18px;
+        cursor: pointer;
+        background-color: green;
+        border: 3px solid black;
+
+    }
+</style>
+<button id="quoteButton" onclick="changeQuote()">Change Quote</button>
+<p id="quoteContent"></p>
+
+<script>
+    const quotes = [
+        {
+            text: `Success is not final,failure is not fatal: It is the courage to continue that counts.`,
+            author: `Winston Churchill`
+        },
+        {
+            text: `Strive not to be a success,but rather to be of value.`,
+            author: `Albert Einstein`
+        },
+        {
+            text: `The only way to do great work is to love whta you do.`,
+            author: `Steve Jobs`
+        },
+        {
+            text: `Be the change you ish to see in the world.`,
+            author: `Mahatma Gandhi`
+        }
+
+    ];
+
+    let currentIndex = 0;
+
+    function changeQuote() {
+        const quoteContent = document.getElementById('quoteContent');
+        quoteContent.innerHTML = `"${quotes[currentIndex].text}" - ${quotes[currentIndex].author}`;
+        currentIndex = (currentIndex + 1) % quotes.length;
+    }
+</script>
+</body>
+
+</html>

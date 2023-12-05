@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>JS Set</h2>
+        <P>ForEach() calls a function for each elements:</P>
+
+        <script>
+            const letters = new Set (["a","b","c"])
+
+            let text = "";
+            letters.forEach (function(value) {
+                text += value + "<br>";
+            }) 
+            document.write(text)
+        </script>
+    </body>
+</html>

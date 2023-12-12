@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Invoking Function AS A Method</h2>
+        <script>
+            const myObject = {
+                firstName:"Aman",
+                lastName:"Bisen",
+                fullName: function () {
+                    return this.firstName + " " + this.lastName;
+                }
+            }
+            document.write(myObject.fullName());
+        </script>
+    </body>
+</html>

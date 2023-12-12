@@ -7,16 +7,16 @@
     <script>
         function rotateLeftOne(arr) {
             if (arr.length <= 1) {
-                return arr; // If the array has 0 or 1 element, no rotation needed
+                return arr; 
             }
 
-            const firstElement = arr.shift(); // Remove the first element
-            arr.push(firstElement); // Add the removed element to the end of the array
+            const firstElement = arr.shift(); 
+            arr.push(firstElement); 
 
             return arr;
         }
 
-        // Example array
+       
         const array = [2, 8, 3];
 
         document.write("Original array:", array );

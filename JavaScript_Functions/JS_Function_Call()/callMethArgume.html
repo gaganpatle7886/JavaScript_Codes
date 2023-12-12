@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>
+            The Call() Method with Arguments
+        </h2>
+        <p id="demo"></p>
+    </body>
+    <script>
+        const person = {
+            fullName: function(city, country) {
+                return this.fistName + " " + this.lastName + " ," + city + "," + country;
+            }
+        }
+
+        const person1 = {
+            fistName: "Aman",
+            lastName: "Bisen"
+        }
+
+        const person2 = {
+            fistName:"Ramu",
+            lastName:"Kumar"
+        }
+        document.getElementById("demo").innerHTML = person.fullName.call(person1,"Raju", "Bhhat");
+    </script>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>Rotate an array to the left 1 position (For example if array elements are 2,8,3 after rotation it should be 8,3,2)
+    </h2>
+    <script>
+        function rotateLeftOne(arr) {
+            if (arr.length <= 1) {
+                return arr; // If the array has 0 or 1 element, no rotation needed
+            }
+
+            const firstElement = arr.shift(); // Remove the first element
+            arr.push(firstElement); // Add the removed element to the end of the array
+
+            return arr;
+        }
+
+        // Example array
+        const array = [2, 8, 3];
+
+        document.write("Original array:", array );
+        const rotatedArray = rotateLeftOne(array);
+        document.write("Array after rotating left by one position:", rotatedArray);
+
+    </script>
+</body>
+
+</html>

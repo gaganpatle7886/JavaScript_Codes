@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>The apply() Method with Arguments</h2>
+        <script>
+            const person = {
+                fullName: function(city,country) {
+                    return this.firstName + " " + this.lastName + "," + city + "," + country;
+                }
+            }
+
+            const person1 = {
+                firstName:"Raju",
+                lastName:"Rastogi"
+            }
+            document.write(person.fullName.apply(person1,["Ravi", "Kumar"]));
+        </script>
+    </body>
+</html>

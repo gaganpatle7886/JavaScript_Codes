@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>JS Function Bind()</h2>
+        <script>
+            const person = {
+                firstName:"Raj",
+                lastName:"Sagre",
+                fullName: function() {
+                    return this.firstName + " " + this.lastName;
+                }
+            }
+
+            const member = {
+                firstName:"Aryan",
+                lastName:"Bansod",
+            }
+            let fullName = person.fullName.bind(member);
+
+            document.write(fullName());
+        </script>
+    </body>
+</html>

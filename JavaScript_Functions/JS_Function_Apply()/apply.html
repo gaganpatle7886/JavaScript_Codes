@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>JS Apply() Method</h2>
+
+        <script>
+             const person = {
+                fullName: function () {
+                    return this.firstName + " " + this.lastName;
+                }
+             }
+
+             const person1 ={
+                firstName:"Ramu",
+                lastName:"Kaka"
+             }
+             document.write(person.fullName.apply(person1));
+        </script>
+    </body>
+</html>
